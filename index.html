@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* --- custom menu --- */
+    .custom-menu {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+        font-family: sans-serif;
+        background: lightgrey;
+        color: black;
+        border-radius: 10px;
+    }
+
+    il {
+        list-style-type: none;
+    }
+
+    .custom-menu li {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    .custom-menu li:hover {
+        background-color: lightblue;
+    }
+
+    /* ---- reset ---- */
+
+    /* ---- particles.js container ---- */
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+    }
+
+</style>
+
+<head>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Welcome</title>
+
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <il class='custom-menu'>
+        <li data-action="telegram">Contact me on telegram</li>
+        <li data-action="mail">Email me</li>
+        <li data-action="poc">View my pocs</li>
+        <li data-action="reports">Look at my reports</li>
+        <li data-action="github">Visit my github!</li>
+    </il>
+    <div id="particles-js"></div>
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card green">
+                <div class="card-content white-text">
+                    <span class="card-title">
+                        <b>Who am i?</b>
+                    </span>
+                    <h6>
+                        Hello everyone, I'm <b>h0nus</b> and I'm a cyber security enthusiast.
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card green darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">
+                        <b>My skills</b>
+                    </span>
+                    <h6>
+                        <lu>
+                            <li> Web application security testing</li>
+                            <li> Red teaming</li>
+                            <li> Reverse engineering</li>
+                            <li> <b>C#</b> and <b>Python</b> developing</li>
+                        </lu>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card green darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">
+                        <b>My hackthebox plate</b>
+                    </span>
+                    <h6>
+                        <script src="https://www.hackthebox.eu/badge/60480"></script>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card green darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">
+                        <b>What I do</b>
+                    </span>
+                    <h6>
+                        <lu>
+                            <li>I study cybersecurity everyday</li>
+                            <li>Do bug hunting in free time</li>
+                            <li>Do some research in the field of information security</li>
+                            <li>Play some games when I'm annoyed</li>
+                        </lu>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card green darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">
+                        <b>My infos</b>
+                    </span>
+                    <h6>
+                        <ul>
+                            <li><i class="tiny material-icons">face</i> <b>Name</b>: Ivan</li>
+                            <li><i class="tiny material-icons">my_location</i> <b>Position</b>: Italy</li>
+                            <li><i class="tiny material-icons">whatshot</i> <b>Years</b>: 22</li>
+                        </ul>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- jQuery before Propeller.js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 200,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": true,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": false,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": false
+        });
+
+        //custom menu action
+        // Trigger action when the contexmenu is about to be shown
+        $(document).bind("contextmenu", function(event) {
+
+            // Avoid the real one
+            event.preventDefault();
+
+            // Show contextmenu
+            $(".custom-menu").finish().toggle(100).
+
+            // In the right position (the mouse)
+            css({
+                top: event.pageY + "px",
+                left: event.pageX + "px"
+            });
+        });
+
+
+        // If the document is clicked somewhere
+        $(document).bind("mousedown", function(e) {
+
+            // If the clicked element is not the menu
+            if (!$(e.target).parents(".custom-menu").length > 0) {
+
+                // Hide it
+                $(".custom-menu").hide(100);
+            }
+        });
+
+
+        // If the menu element is clicked
+        $(".custom-menu li").click(function() {
+
+            // This is the triggered action name
+            switch ($(this).attr("data-action")) {
+
+                // A case for each action. Your actions here
+                case "telegram":
+                    window.open("https://t.me/h0nus");
+                    break;
+                case "mail":
+                    window.open("mailto:ivanbiagi7@protonmail.com");
+                    break;
+                case "poc":
+                    window.open("https://github.com/h0nus/PoCs");
+                    break;
+                case "reports":
+                    window.open("https://github.com/h0nus/My-Reports");
+                    break;
+                case "github":
+                    window.open("https://github.com/h0nus");
+                    break;
+            }
+
+            // Hide it AFTER the action was triggered
+            $(".custom-menu").hide(100);
+        });
+
+    </script>
+</body>
+
+</html>
